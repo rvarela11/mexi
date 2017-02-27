@@ -221,6 +221,9 @@ footer {
   .home__work, .plans__work {
     flex-direction: column;
   }
+  .plans__work div {
+    margin-top: 1%;
+  }
   .plans__work div img {
     width: 20%;
     height: 20%;
