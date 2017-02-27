@@ -1,0 +1,237 @@
+body {
+  font-family: 'Droid Sans', sans-serif;
+  margin: 0;
+  margin-bottom: 2%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* NAV ---------------------------------------------------------------------- */
+
+.nav {
+  height: 100vh;
+  background-color: #dbad6c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav ul li {
+  font-size: 2rem;
+  cursor: pointer;
+  margin-bottom: 10%;
+}
+.nav ul li:hover {
+  border-bottom: 2px solid #8f4620;
+}
+.nav ul li a {
+  color: #fff;
+}
+.nav__home i {
+  margin-right: 20px;
+}
+.nav__plans i {
+  margin-right: 20px;
+}
+
+/* HEADER ------------------------------------------------------------------- */
+/* HEADER__COMING-SOON -------------------------------------------------------- */
+
+.coming-soon {
+  background-color: red;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.coming-soon__message {
+  margin: 0;
+  color: #fff;
+}
+
+/* HEADER__NAV --------------------------------------------------------------------- */
+
+.nav-img {
+  width: 80px;
+  height: 100px;
+  z-index: 1000;
+  position: fixed;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: 1%;
+  background-color: #fff;
+  border-radius: 50px;
+}
+.nav-img:hover {
+  border: 2px solid #dbad6c;
+}
+
+/* HEADER__TITLE ------------------------------------------------------------------ */
+
+.header__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__title--h1 {
+  margin: 0;
+  padding-bottom: 5px;
+  font-size: 5rem;
+}
+
+/* MEXI-BANNER --------------------------------------------------------------------- */
+
+.mexi-banner--flag {
+  margin-top: 2%;
+  height: 40vh;
+  background: url("images/mexitasty-banner.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+/* HOME/PLANS/FOOTER ------------------------------------------------- */
+
+.home, .plans, footer {
+  margin-left: 2%;
+  width: 75%;
+  margin: auto;
+}
+
+/* HOME/PLANS___TITLE ------------------------------------------------- */
+
+.home__title, .plans__title {
+  font-size: 2rem;
+}
+
+/* HOME/PLANS__DESCRIPTION ------------------------------------------------- */
+
+.home__description, .plans__description {
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+/* HOME/PLANS__WORK -------------------------------------------------------- */
+
+.home__work, .plans__work {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+}
+.home__work div, .plans__work div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  padding: 1%;
+}
+.home__work div p, .plans__work div p {
+  font-size: .80rem;
+}
+
+/* HOME --------------------------------------------------------------------- */
+
+.home__work div h4 {
+  font-size: 2rem;
+}
+
+/* COLORFUL-LINEBREAK ------------------------------------------------------ */
+
+.colorful-linebreak {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1%;
+}
+.colorful-linebreak div {
+  height: 5px;
+  flex: 1;
+}
+.colorful-linebreak div:first-child {
+  background-color: #006847;
+}
+.colorful-linebreak div:nth-child(2) {
+  background-color: #8f4620;
+}
+.colorful-linebreak div:nth-child(3) {
+  background-color: #dbad6c;
+}
+.colorful-linebreak div:nth-child(4) {
+  background-color: #30c2dc;
+}
+.colorful-linebreak div:nth-child(5) {
+  background-color: #ce1126;
+}
+
+/* PLANS -------------------------------------------------------------------- */
+
+.plans__work div img {
+  width: 50%;
+  height: 50%;
+}
+.mexi-banner--box {
+  height: 45vh;
+  margin: 2% 0;
+  display: flex;
+  flex-direction: row;
+}
+.mexi-banner--box img {
+  display: flex;
+  flex: 1;
+}
+.mexi-banner {
+  height: 100%;
+}
+.mexi-banner--box-mobile {
+  display: none;
+}
+
+/* FOOTER ------------------------------------------------------------------ */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* RESPONSIVE --------------------------------------------------------------- */
+
+@media screen and (max-width: 860px) {
+  .nav-img {
+    width: 30px;
+    height: 40px;
+  }
+  .header__title--h1 {
+    font-size: 2.5rem;
+  }
+  .home__title, .plans__title, .home__work div h4 {
+    font-size: 1.5rem;
+  }
+  .home__img {
+    height: 35vh;
+  }
+  .home__work, .plans__work {
+    flex-direction: column;
+  }
+  .plans__work div img {
+    width: 20%;
+    height: 20%;
+  }
+  .mexi-banner--box {
+    display: none;
+  }
+  .mexi-banner--box-mobile {
+    display: block;
+  }
+  .mexi-banner {
+    width: 100%;
+  }
+}
