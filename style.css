@@ -222,7 +222,7 @@ footer {
     flex-direction: column;
   }
   .plans__work div {
-    margin-top: 1%;
+    margin-top: 2% 0;
   }
   .plans__work div img {
     width: 20%;
