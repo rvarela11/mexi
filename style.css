@@ -55,7 +55,7 @@ a {
 .home, .work {
   width: 90%;
   margin: auto;
-  /*height: 100vh;*/
+  height: 100vh;
 }
 .home__message h2, .work__title h2 {
   font-size: 3rem;
@@ -292,6 +292,9 @@ header {
   .nav-img {
     width: 30px;
     height: 40px;
+  }
+  .colorful-linebreak {
+    margin: 4% 0;
   }
   .home,
   .work {
