@@ -174,13 +174,13 @@ header {
   margin: 0 0 2% 0;
 }
 .plans__info {
-  margin: 8% 0;
+  margin: 2% 0;
 }
 .plans__info div {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 1%;
+  padding: 5px;
   background-color: #30c2dc;
   margin-bottom: 5px;
   border-radius: 5px;
@@ -199,17 +199,22 @@ header {
   height: 10%;
 }
 .plans__info div:first-child img {
-  width: 28%;
+  width: 20%;
 }
 .plans__info div:nth-child(2) img {
-  width: 15%;
+  width: 10%;
 }
-
+.plans__info div:last-child img {
+  width: 7%;
+}
 .plans__info div h4 {
   font-size: 1.25rem;
   font-weight: 100;
   margin-left: 15px;
   color: #fff;
+}
+.plans__description ul {
+  list-style-type: circle;
 }
 
 
