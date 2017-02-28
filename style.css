@@ -52,12 +52,16 @@ a {
 
 /* Home --------------------------------------------------------------------- */
 
-.home, .work {
+.home,
+.work,
+.plans {
   width: 90%;
   margin: auto;
   height: 100vh;
 }
-.home__message h2, .work__title h2 {
+.home__message h2,
+.work__title h2,
+.plans__title h2 {
   font-size: 3rem;
   font-weight: 100;
   margin: 0;
@@ -70,7 +74,6 @@ a {
 .home__pictures--title h4 {
   margin: 0 0 2% 0;
 }
-
 .home__pictures {
   height: 30vh;
   width: 100%;
@@ -127,7 +130,7 @@ header {
   background-color: #30c2dc;
   padding: 2%;
   border-radius: 5px;
-  margin: 0 0 2% 0;
+  margin-bottom: 2%;
 }
 .work__description--highlight {
   border-bottom: 2px solid #ce1126
@@ -165,45 +168,62 @@ header {
   font-weight: 100;
 }
 
-/* HOME/PLANS/FOOTER ------------------------------------------------- */
+/* PLANS  ------------------------------------------------------------------ */
 
-/*.home, .plans, footer {
-  margin-left: 2%;
-  width: 90%;
-  margin: auto;
-}*/
-
-/* HOME/PLANS___TITLE ------------------------------------------------- */
-
-/*.home__title, .plans__title {
-  font-size: 2rem;
-}*/
-
-/* HOME/PLANS__DESCRIPTION ------------------------------------------------- */
-
-/*.home__description, .plans__description {
-  letter-spacing: 1px;
-  font-size: 1rem;
-}*/
-
-/* HOME/PLANS__WORK -------------------------------------------------------- */
-
-/*.plans__work {
+.plans__description {
+  margin: 0 0 2% 0;
+}
+.plans__info {
+  margin: 8% 0;
+}
+.plans__info div {
   display: flex;
   flex-direction: row;
-  margin: 2% 0;
+  align-items: center;
+  padding: 1%;
+  background-color: #30c2dc;
+  margin-bottom: 5px;
+  border-radius: 5px;
 }
-.plans__work div {
+.plans__info div:first-child {
+  width: 25%;
+}
+.plans__info div:nth-child(2) {
+  width: 50%;
+}
+.plans__info div:last-child {
+  width: 75%;
+}
+.plans__info div img {
+  width: 10%;
+  height: 10%;
+}
+.plans__info div:first-child img {
+  width: 28%;
+}
+.plans__info div:nth-child(2) img {
+  width: 15%;
+}
+
+.plans__info div h4 {
+  font-size: 1.25rem;
+  font-weight: 100;
+  margin-left: 15px;
+  color: #fff;
+}
+
+
+/* FOOTER ------------------------------------------------------------------ */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  flex: 1;
-  padding: 1%;
+  margin-bottom: 1%;
 }
-.plans__work div p {
-  font-size: .80rem;
-}*/
 
 /* COLORFUL-LINEBREAK ------------------------------------------------------ */
 
@@ -232,47 +252,13 @@ header {
   background-color: #ce1126;
 }
 
-/* PLANS -------------------------------------------------------------------- */
-
-/*.plans__work div img {
-  width: 50%;
-  height: 50%;
-}
-.mexi-banner--box {
-  height: 45vh;
-  margin: 2% 0;
-  display: flex;
-  flex-direction: row;
-}
-.mexi-banner--box img {
-  display: flex;
-  flex: 1;
-}
-.mexi-banner {
-  height: 100%;
-}
-.mexi-banner--box-mobile {
-  display: none;
-}*/
-
-/* FOOTER ------------------------------------------------------------------ */
-
-/*footer {
-  background-color: #333;
-  color: #fff;
-  padding: 2px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2%;
-}*/
-
 
 /* RESPONSIVE --------------------------------------------------------------- */
 
 @media screen and (max-width: 1016px) {
   .home,
-  .work {
+  .work,
+  .plans {
     width: 88%;
   }
   .home__pictures {
@@ -281,16 +267,30 @@ header {
 }
 @media screen and (max-width: 770px) {
   .home,
-  .work {
+  .work,
+  .plans {
     width: 85%;
   }
   .home__pictures {
     height: 25vh;
   }
+  .plans__info div {
+    background-color: #fff;
+    width: 100% !important;
+  }
+  .plans__info div img {
+    width: 20% !important;
+    height: 20% !important;
+  }
+  .plans__info div h4 {
+    color: #484848;
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width: 588px) {
   .home,
-  .work {
+  .work,
+  .plans {
     width: 81%;
   }
   .home__pictures {
@@ -302,7 +302,8 @@ header {
   .work__info {
     flex-direction: column;
   }
-  .work__description h4 {
+  .work__description h4,
+  .plans__description h4 {
     font-size: 1.25rem;
   }
   .work__info div p {
@@ -313,7 +314,9 @@ header {
   .nav ul {
     padding-left: 2%;
   }
-  .home, .work {
+  .home,
+  .work,
+  .plans {
     height: auto;
   }
   .colorful-linebreak {
@@ -324,7 +327,8 @@ header {
     height: 40px;
   }
   .home,
-  .work {
+  .work,
+  .plans {
     width: 75%;
   }
   .home__message h2 {
@@ -339,49 +343,8 @@ header {
 }
 @media screen and (max-width: 324px) {
   .home,
-  .work {
+  .work,
+  .plans {
     width: 70%;
   }
-
 }
-
-/*@media screen and (max-width: 860px) {
-  .nav-img {
-    width: 30px;
-    height: 40px;
-  }
-  .header__title--h1 {
-    font-size: 2.5rem;
-  }
-  .home__title, .plans__title, .home__work div h4 {
-    font-size: 1.5rem;
-  }
-  .home__img {
-    height: 35vh;
-  }
-  .home__work, .plans__work {
-    flex-direction: column;
-  }
-  .plans__work div {
-    padding: 5% 5% 5% 0;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .plans__work div img {
-    width: 20%;
-    height: 20%;
-  }
-  .plans__work div p {
-    margin-left: 10px;
-  }
-  .mexi-banner--box {
-    display: none;
-  }
-  .mexi-banner--box-mobile {
-    display: block;
-  }
-  .mexi-banner {
-    width: 100%;
-  }
-}*/
