@@ -292,6 +292,9 @@ header {
   .home, .work {
     height: auto;
   }
+  .colorful-linebreak {
+    margin: 4% 0;
+  }
   .nav-img {
     width: 30px;
     height: 40px;
