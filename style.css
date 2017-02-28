@@ -201,7 +201,7 @@ header {
 .colorful-linebreak {
   display: flex;
   flex-direction: row;
-  margin: 2% 0;
+  margin: 0 0 2% 0;
 }
 .colorful-linebreak div {
   height: 5px;
@@ -292,9 +292,6 @@ header {
   .nav-img {
     width: 30px;
     height: 40px;
-  }
-  .colorful-linebreak {
-    margin: 4% 0;
   }
   .home,
   .work {
